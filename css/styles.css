@@ -1,10 +1,18 @@
+html {
+    scroll-behavior: smooth;
+}
 html h1,h2,h3,h4,h5,h6,p{
     margin:0;
 }
 
 html p{
   font-size: 20px; 
- color:#577a76;
+ color:#496965;
+}
+
+html h1,h2{
+    color:#00A896;
+    font-size:55px;
 }
 body {
     background-size: 100% 20px;
@@ -20,12 +28,17 @@ body {
     background-size: 10px 10px;
     z-index: -1;
   }
+
+  .fullscreen{
+    min-height:95svh;
+  }
  
 .header {
     display:flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     margin-top:1.65em;
+    gap:20em;
     .icon {
         margin-left:10%;
       }
@@ -33,7 +46,6 @@ body {
         display:flex;
         align-items: center;
         gap:2em;
-        margin-right:17%;
         
      }
      .connect_button{
@@ -58,11 +70,12 @@ a{
     align-items: center;
     }
 
+
 .info {
     display:flex;
-    align-items: center;
+    /* align-items: center; */
+    margin-top:18vh;
     justify-content: center;
-    margin-top:10em;
     width:100%;
     gap:8.5em;
 
@@ -73,6 +86,30 @@ a{
     font-size:55px;
     
 }
+
+.info .button{
+   display:flex;
+   gap:1.5em;
+   margin-top:4em;
+}
+.info .button *{
+    height:4em;
+    width:20ch;
+    background-color:#00A896;
+    color:#fff;
+    border-radius:0.7em;
+    font-size:16px;
+    font-weight: 600;
+}
+
+.info .button .work_button {
+    color:#00A896;
+    background-color: #fff;
+    border-color: #00A896;
+
+}
+
+
 .info span{
         display:block;
         color: #FF6F40;
@@ -85,8 +122,9 @@ a{
 .image {
     width: 27em;
     height: 27em;
-    overflow: hidden;
     position: relative;
+    /* align-self: flex-start; */
+
   }
 
   .image img {
@@ -94,8 +132,10 @@ a{
     height: 100%;
     object-fit: cover;
     border-top-left-radius: 50%;
-    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
     border-top-right-radius: 50%;
+    border:2.5px dashed;
+    border-color: #00A896;
   }
 
   .image::before {
@@ -109,3 +149,5 @@ a{
     transform: rotate(45deg);
     z-index: 1;
   }
+  
+  
