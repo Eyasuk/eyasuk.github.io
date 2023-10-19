@@ -149,5 +149,32 @@ a{
     transform: rotate(45deg);
     z-index: 1;
   }
+
+  .service {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service_content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:1em;
+    margin-top: 4em;
+  }
+  .service_content div {
+    border: 1px solid #00A896;
+    border-radius: 1em;
+    width:30em;
+    height:30vh;
+    background-color: #fff;
+
+  }
+
+  .service_content h2 {
+    font-size: 24px;
+    font-weight: 300;
+  }
   
   
