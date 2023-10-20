@@ -7,15 +7,20 @@ html h1,h2,h3,h4,h5,h6,p{
 
 html p{
   font-size: 20px; 
- color:#496965;
+ color:#6a5a92;
+ ;
 }
 
 html h1,h2{
-    color:#00A896;
-    font-size:55px;
+    color:#130f49;
+    font-size: 3.75rem;
+    font-weight: bold;
+   
 }
 body {
     background-size: 100% 20px;
+    font-family: Helvetica;
+
   }
 
   .comic-dots {
@@ -51,7 +56,7 @@ body {
      .connect_button{
         height:3em;
         width:15ch;
-        background-color:#00A896;
+        background-color:#130f49;
         color:#fff;
         border-radius:0.7em;
         margin-left:0.4em;
@@ -61,7 +66,7 @@ body {
 a{
   font-size: 18px;
   font-weight: 600;
-  color:#00A896;
+  color:#130f49;
   margin-left: 1em;
 }
 .content{
@@ -82,7 +87,7 @@ a{
    
 }
 .info h2{
-    color:#00A896;
+    color:#130f49;
     font-size:55px;
     
 }
@@ -95,7 +100,7 @@ a{
 .info .button *{
     height:4em;
     width:20ch;
-    background-color:#00A896;
+    background-color:#130f49;
     color:#fff;
     border-radius:0.7em;
     font-size:16px;
@@ -103,16 +108,14 @@ a{
 }
 
 .info .button .work_button {
-    color:#00A896;
-    background-color: #fff;
-    border-color: #00A896;
+    background-color: #34a1cd;
 
 }
 
 
 .info span{
         display:block;
-        color: #FF6F40;
+        color: #34a1cd;
 }
 
 .info p {
@@ -120,22 +123,28 @@ a{
 }
 
 .image {
-    width: 27em;
-    height: 27em;
+    width: 33em;
+    height: 33em;
     position: relative;
     /* align-self: flex-start; */
 
   }
 
-  .image img {
+  .image .profile {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-top-left-radius: 50%;
-    border-bottom-right-radius: 50%;
-    border-top-right-radius: 50%;
-    border:2.5px dashed;
-    border-color: #00A896;
+    border-top-left-radius: 49%;
+    border-bottom-left-radius: 49%;
+    border-bottom-right-radius: 49%;
+    /* border:2.5px dashed; */
+    /* border-color: #130f49; */
+  }
+
+  .image .purple-dots{
+    position: absolute;
+    top:6px;
+    left: -20px;
   }
 
   .image::before {
@@ -164,7 +173,7 @@ a{
     margin-top: 4em;
   }
   .service_content div {
-    border: 1px solid #00A896;
+    border: 1px solid #34a1cd;
     border-radius: 1em;
     width:30em;
     height:30vh;
@@ -174,7 +183,6 @@ a{
 
   .service_content h2 {
     font-size: 24px;
-    font-weight: 300;
   }
   
   
