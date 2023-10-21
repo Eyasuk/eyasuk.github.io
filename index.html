@@ -1,66 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Eyasu</title>
-</head>
-<link rel="stylesheet"  href="css/styles.css">
-<body>
-   <!-- <div class="comic-dots"></div> -->
-     <header class='header'>
-        <h1 class="icon">👋</h1>
-        <nav class="nav">
-            <a href="#services">Services</a>
-            <a>Portfolio</a>
-            <a>Blog</a>
-            <button class="connect_button">Connect</button>
-
-        </nav>
-     </header>
-     <main class="content">
-        <div class="info fullscreen">
-         <div>
+  </head>
+  <link rel="stylesheet" href="css/styles.css" />
+  <body>
+    <!-- <div class="comic-dots"></div> -->
+    <header class="header">
+      <h1 class="icon">👋</h1>
+      <nav class="nav">
+        <a href="#services">Services</a>
+        <a>Portfolio</a>
+        <a>Blog</a>
+        <button class="connect_button">Connect</button>
+      </nav>
+    </header>
+    <main class="content">
+      <div class="info fullscreen">
+        <div>
           <h2>
             I Craft Unique
-            <span>  Websites </span>
-            That Propel 
+            <span> Websites </span>
+            That Propel
             <span>Your Venture</span>
             to New Heights
           </h2>
-          <p>I help you to increase conversion and performance in <br/>
-             every possible way.</p>
-             <div class="button">
-                <button class="work_button">See my work</button>
-                <button class="project_button">Start a project</button>
-
-             </div>
+          <p>
+            I help you to increase conversion and performance in <br />
+            every possible way.
+          </p>
+          <div class="button">
+            <button class="work_button">See my work</button>
+            <button class="project_button" onclick="composeEmail()">
+              Start a project
+            </button>
+          </div>
         </div>
         <div class="image">
-            <img class ='profile' src="assets/image/profile.jpg" alt="ek picture"/>
-            <img class='purple-dots' src="assets/image/purple-dots.svg" alt="purple dots"/>
+          <img
+            class="profile"
+            src="assets/image/profile.jpg"
+            alt="ek picture"
+          />
+          <img
+            class="purple-dots"
+            src="assets/image/purple-dots.svg"
+            alt="purple dots"
+          />
         </div>
-    </div>
-        <div class="service fullscreen" id="services">
-            <h1>My Services</h1>
-            <div class="service_content">
-                <div>
-                    <h2>Any Website Design &<br> Development</h2>
-                </div>
-                <div>
-                    <h2>SEO</h2>
-                </div>
+      </div>
+      <div class="service fullscreen" id="services">
+        <h1>My Services</h1>
+        <div class="service_content">
+          <div>
+            <div class="services_title">
+                <img
+                  class="service_image"
+                  src="assets/icons/web-design.png"
+                />
+                <h2>Website Development</h2>
             </div>
-            <div class="service_content">
-                <div>
-                    <h2>Dapp Development & Deployment</h2>
-                </div>
-                <div>
-                    <h2>Maintenance</h2>
-
-                </div>
+            <p>
+              websites. I create web magic, high-performing, drop-dead gorgeous
+              sites which are user-friendly that seduce visitors into clicking.
+            </p>
+          </div>
+          <div>
+            <div class="services_title">
+                <img
+                  class="service_image"
+                  src="assets/icons/app.png"
+                />
+                <h2>Decentralized Application</h2>
             </div>
+            <p>
+              Unleash the full potential of SEO with my expertise.I meticulously
+              craft websites that captivate search engines,casting a spell of
+              enhanced rankings and heightened visibility. .
+            </p>
+          </div>
         </div>
+        <div class="service_content">
+          <div>
+            <div class="services_title">
+              <img
+                class="service_image"
+                src="assets/icons/smart-contracts.png"
+              />
+              <h2>Smart Contracts</h2>
+            </div>
+            <p>
+              These meticulously optimized wonders act as a beacon, attracting
+              organic traffic and elevating your digital presence. Bid farewell
+              to the depths of obscurity in search results and embrace a reign
+              of digital triumph. Embark on an SEO journey that will leave your
+              competitors awestruck, as your website ascends the throne of
+              online prominence
+            </p>
+          </div>
+          <div>
+            <div>
+                <div class="services_title">
+                  <img
+                    class="service_image"
+                    src="assets/icons/coding.png"
+                  />
+                  <h2>Backend</h2>
+                </div>
+            <p>
+              These meticulously optimized wonders act as a beacon, attracting
+              organic traffic and elevating your digital presence. Bid farewell
+              to the depths of obscurity in search results and embrace a reign
+              of digital triumph. Embark on an SEO journey that will leave your
+              competitors awestruck, as your website ascends the throne of
+              online prominence
+            </p>
+          </div>
+        </div>
+      </div>
     </main>
-</body>
+    <script src="script/email.js"></script>
+  </body>
 </html>
