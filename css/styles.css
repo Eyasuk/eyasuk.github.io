@@ -23,8 +23,9 @@ h2 {
   font-weight: bold;
 }
 body {
-  background-size: 100% 20px;
   font-family: Helvetica;
+  overflow-x: hidden;
+  margin: 0px;
 }
 
 .comic-dots {
@@ -159,13 +160,15 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 100% !important;
+  margin-bottom: 3%;
 }
 
 .service_content {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1em;
+  gap: 2em;
   margin-top: 4em;
 }
 
@@ -184,7 +187,7 @@ a {
 .service_content > div {
   border-radius: 1em;
   width: 31em;
-  height: 30vh;
+  height: 16em;
   background-color: #fff;
 }
 
@@ -199,4 +202,52 @@ a {
   font-size: 16px;
   line-height: 1.6em;
   margin-left: 2.5em;
+}
+
+.service_content .small_desc {
+  font-weight: bold;
+}
+.portfolio {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  margin-top: 15em;
+  margin-bottom: 3em;
+}
+.portfolio-background {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-color: #dc3e3e1d;
+  border-top-left-radius: 3em;
+  border-bottom-left-radius: 3em;
+  width: 70%;
+  height: 28em;
+  z-index: -2;
+}
+.portfolio-content {
+  margin-top: 1.3em;
+  margin-left: 20%;
+}
+
+.portfolio-projects {
+  align-self: center;
+  min-width: 70%;
+  max-width: 80em;
+  /* justify-content: center; */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  margin-top: 4em;
+  margin-left: 20%;
+}
+.portfolio-projects div {
+  padding: 1em;
+  background-color: #b3b0dc;
+  height: 22em;
+  min-width: 18em;
+  width: 22em;
+  border-radius: 2em;
 }
