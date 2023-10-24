@@ -244,10 +244,104 @@ a {
   margin-left: 20%;
 }
 .portfolio-projects div {
-  padding: 1em;
-  background-color: #b3b0dc;
   height: 22em;
   min-width: 18em;
   width: 22em;
   border-radius: 2em;
+  overflow: hidden;
+}
+
+.portfolio-projects div img {
+  object-fit: cover;
+  height: 22em;
+}
+
+.portfolio_advert {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  position: relative;
+}
+.portfolio_advert img {
+  position: absolute;
+  z-index: -1;
+}
+.portfolio_advert button {
+  height: 4em;
+  width: 20ch;
+  border-radius: 1em;
+  background-color: #130f49;
+  color: #fff;
+}
+
+.portfolio_advert p {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.blog_div {
+  margin-top: 2em;
+  width: 20em;
+  height: 25em;
+  border-radius: 2em;
+  box-shadow: 5px 20px 100px #0304040a, 9px 10px 30px #96c5dc2f;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.blog_div img {
+  width: 100%;
+  height: 55%;
+  object-fit: cover;
+}
+
+.blog_div h2 {
+  padding-inline: 1em;
+}
+
+.blog_div p {
+  padding-inline: 1.1em;
+}
+
+.blog_div h2 {
+  font-size: x-large;
+}
+
+.blog {
+  position: relative;
+}
+
+.blog .view_more {
+  position: relative;
+  top: 2em;
+  left: 90%;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 2em;
+}
+.contact div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #e9f9ff;
+  border-radius: 2em;
+  width: 93%;
+  max-width: 75em;
+  height: 28em;
+  margin-bottom: 2em;
+}
+
+.contact p {
+  font-size: smaller;
 }
