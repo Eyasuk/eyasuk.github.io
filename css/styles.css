@@ -329,7 +329,7 @@ a {
   width: 100%;
   margin-bottom: 2em;
 }
-.contact div {
+.contact .contact_element {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -340,8 +340,27 @@ a {
   max-width: 75em;
   height: 28em;
   margin-bottom: 2em;
+  gap: 0.5em;
+}
+
+.contact h4 {
+  color: #130f49;
+}
+
+.contact h2 {
+  font-size: 3em;
 }
 
 .contact p {
   font-size: smaller;
+}
+
+.social {
+  margin-top: 3em;
+  height: 2.5em;
+}
+
+.social img {
+  height: 2em;
+  width: 2em;
 }
