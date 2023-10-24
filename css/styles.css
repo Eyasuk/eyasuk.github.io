@@ -68,10 +68,11 @@ body {
 }
 
 a {
-  font-size: 18px;
-  font-weight: 600;
+  /* font-size: 18px; */
+  /* font-weight: 600; */
   color: #130f49;
-  margin-left: 1em;
+  /* margin-left: 1em; */
+  text-decoration: none;
 }
 .content {
   display: flex;
@@ -251,6 +252,31 @@ a {
   overflow: hidden;
 }
 
+.portfolio-projects > div:hover {
+  .open {
+    position: absolute;
+    z-index: 100;
+    background-color: #4f4b8a7d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+  }
+}
+
+.portfolio-projects .open {
+  display: none;
+}
+
+.portfolio-projects .open img {
+  width: 1em;
+  height: 1em;
+}
+.portfolio-projects .open p {
+  color: #fff;
+}
+
 .portfolio-projects div img {
   object-fit: cover;
   height: 22em;
@@ -358,6 +384,8 @@ a {
 .social {
   margin-top: 3em;
   height: 2.5em;
+  gap: 1.5em;
+  display: flex;
 }
 
 .social img {
