@@ -228,7 +228,8 @@ a {
   min-width: 70%;
   max-width: 80em;
   align-self: center;
-  justify-content: center;
+  margin-left: 50%;
+  margin-right: 50%;
   display: flex;
   flex-wrap: wrap;
   gap: 2em;
@@ -437,7 +438,13 @@ a {
 .active.fade-right {
   animation: fade-right 1s ease-in;
 }
-
+@media screen and (max-width: 1200px) {
+  .portfolio-projects {
+    margin-left: 0px;
+    margin-right: 0px;
+    justify-content: center;
+  }
+}
 @media screen and (max-width: 992px) {
   body {
     width: 100%;
@@ -485,5 +492,10 @@ a {
     .purple-dots {
       display: none;
     }
+  }
+  .portfolio-projects {
+    justify-content: center;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 }
