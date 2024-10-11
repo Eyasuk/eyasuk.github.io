@@ -1,15 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" class="s">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Eyasu</title>
+    <link rel="stylesheet" href="css/main_style.css" />
   </head>
-  <link rel="stylesheet" href="css/styles.css" />
 
   <body>
     <header class="header">
       <h1 class="icon">👋</h1>
+      <button class="menu_toggle">☰</button>
       <nav class="nav">
         <a href="#services">Services</a>
         <a href="#portfolio">Portfolio</a>
@@ -21,7 +22,7 @@
     </header>
     <main class="content">
       <div class="info fullscreen">
-        <div class="info_mobile">
+        <div>
           <h2>
             I Craft Unique
             <span> Websites </span>
@@ -55,157 +56,10 @@
           />
         </div>
       </div>
-      <div class="service fullscreen reveal fade-bottom" id="services">
-        <h1>My Services</h1>
-        <div class="service_content">
-          <div>
-            <div class="services_title">
-              <img class="service_image" src="assets/icons/web-design.png" />
-              <h2>Website Development</h2>
-            </div>
-            <div>
-              <p>
-                <span class="small_desc">I don't just design websites.</span>
-                I build high-performing, beautiful websites that are
-                conversion-focused, brand-accurate, and user-friendly
-              </p>
-            </div>
-          </div>
-          <div>
-            <div class="services_title">
-              <img class="service_image" src="assets/icons/app.png" />
-              <h2>Decentralized Application</h2>
-            </div>
-            <p>
-              <span class="small_desc">Embrace the Future.</span>
-              Unlock the true potential of DApps and Web3 with my exceptional
-              development skills. Join forces with me to create cutting-edge
-              applications that redefine the digital landscape.
-            </p>
-          </div>
-        </div>
-        <div class="service_content">
-          <div>
-            <div class="services_title">
-              <img
-                class="service_image"
-                src="assets/icons/smart-contracts.png"
-              />
-              <h2>Smart Contracts</h2>
-            </div>
-            <p>
-              <span class="small_desc">Secure Smart Contracts.</span>
-              Unlock the Power of Secure Smart Contracts. Trust, Transparency,
-              and Cutting-Edge Solutions. Let Me Develop Your Robust Blockchain
-              Solutions for a Decentralized Future.
-            </p>
-          </div>
-          <div>
-            <div>
-              <div class="services_title">
-                <img class="service_image" src="assets/icons/coding.png" />
-                <h2>Backend</h2>
-              </div>
-              <p>
-                <span class="small_desc">Fast & Optimized.</span>
-                With expertise in backend development, I excel in creating fast,
-                secure, and optimized solutions. Prioritizing performance and
-                security, I deliver efficient backend systems that enhance
-                overall application performance
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="fullscreen portfolio" id="portfolio">
-        <div class="portfolio-background reveal fade-right"></div>
-        <h1 class="portfolio-content reveal fade-bottom">Recent Works</h1>
-        <div class="portfolio-projects reveal fade-bottom">
-          <div>
-            <div class="open">
-              <a href="https://libes.vercel.app" target="_blank">
-                <img src="assets/icons/open.svg" />
-                <!-- <p>open</p> -->
-              </a>
-            </div>
-            <img src="assets/image/works/merch.png" alt="website " />
-          </div>
-          <div>
-            <div class="open">
-              <a href="https://anoblocks.vercel.app" target="_blank">
-                <img src="assets/icons/open.svg" />
-                <!-- <p>open</p> -->
-              </a>
-            </div>
-            <img src="assets/image/works/ano.png" alt="website " />
-          </div>
-          <div>
-            <div class="open">
-              <a href="https://bitcoin-wallet-lovat.vercel.app" target="_blank">
-                <img src="assets/icons/open.svg" />
-                <!-- <p>open</p> -->
-              </a>
-            </div>
-            <img src="assets/image/works/bitcoinwallet.png" alt="website " />
-          </div>
-          <div class="portfolio_advert">
-            <img src="assets/image/works/background.webp" />
-            <p>Your website here</p>
-            <button onclick="composeEmail()">Start a project</button>
-          </div>
-          <div></div>
-        </div>
-      </div>
-      <div class="blog fullscreen reveal fade-bottom" id="blog">
-        <p>LATEST</p>
-        <h1>From the Blog</h1>
-        <a
-          href="https://medium.com/@eyasukibru13/fantasy-premier-league-api-authentication-guide-using-node-js-ca25e693594e"
-        >
-          <div class="blog_div">
-            <img src="assets/image/blog/blog_fantasy.png" />
-            <h2>
-              Fantasy Premier League API authentication guide(using node.js)
-            </h2>
-            <p>Dec 31, 2021</p>
-          </div>
-        </a>
-        <a
-          class="view_more"
-          href="https://medium.com/@eyasukibru13"
-          target="_blank"
-          >View all</a
-        >
-      </div>
-      <div class="contact reveal fade-bottom" id="contact">
-        <div class="contact_element">
-          <p>CONTACT ME</p>
-          <h2>Got a Project? Lets Talk!</h2>
-          <h4>eyasukibru290@gmail.com</h4>
-          <div class="social">
-            <a
-              alt="linkedin"
-              href="https://www.linkedin.com/in/eyasu-kibru-6151b61ab/"
-              ><img src="assets/icons/linkedin.png"
-            /></a>
-            <a
-              alt="upwork"
-              href="https://www.upwork.com/freelancers/~0120aad2c2c79f5935"
-              ><img src="assets/icons/upwork.png"
-            /></a>
-            <a alt="github" href="https://github.com/Eyasuk"
-              ><img src="assets/icons/github.png"
-            /></a>
-            <a alt="telegram" href="https://t.me/Ek9012"
-              ><img src="assets/icons/telegram.png"
-            /></a>
-            <!-- <a alt="twitter"><img src="assets/icons/x.png" /></a> -->
-          </div>
-        </div>
-        <p>© 2023 Eyasu Kibru. Inspired By Michael Mannucci</p>
-      </div>
     </main>
+
     <script src="script/email.js"></script>
     <script src="script/animation.js"></script>
+    <script src="script/events.js"></script>
   </body>
 </html>
