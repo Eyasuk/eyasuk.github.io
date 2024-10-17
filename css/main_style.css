@@ -1,6 +1,6 @@
 html {
   scroll-behavior: smooth;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 html p {
@@ -15,7 +15,7 @@ h2 {
   font-weight: bold;
 }
 
-.a {
+a {
   color: #130f49;
   text-decoration: none;
 }
@@ -63,13 +63,15 @@ body {
     }
     .nav {
       display: none;
-      background: yellow;
       width: 90vw;
+      background-color:#f3efe0;
+      border-radius:10px;
       flex-direction: column;
       position: absolute;
       top: 10%;
       left: 2%;
-      padding: 0.7em;
+      padding: 1em;
+  
     }
     .menu_toggle,
     .menu_close {
@@ -80,6 +82,10 @@ body {
       margin-right: 0.4em;
     }
   }
+}
+
+.fullscreen {
+  min-height: 90vh;
 }
 
 .content {
@@ -153,12 +159,347 @@ body {
   left: -20px;
 }
 
+.service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3%;
+}
+
+.service_content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2em;
+  margin-top: 2em;
+}
+
+.services_title {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  margin-top: 1.5em;
+  margin-left: 2.5em;
+  margin-bottom: 0.8em;
+}
+
+.service_image {
+  height: 4em;
+  width: 4em;
+}
+
+.service_content > div {
+  border-radius: 1em;
+  width: 31em;
+  max-width: 95vw;
+  height: 16em;
+  background-color: #fff;
+}
+
+.service_content > div:hover {
+  box-shadow:
+    5px 20px 100px #0304040a,
+    9px 10px 30px #96c5dc2f;
+}
+
+.service_content h2 {
+  font-size: 20px;
+}
+
+.service_content p {
+  font-size: 16px;
+  line-height: 1.6em;
+  margin-left: 2.5em;
+}
+
+.service_content .small_desc {
+  font-weight: bold;
+}
+
+.portfolio {
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  position: relative;
+  margin-top: 5em;
+  margin-bottom: 7em;
+  width: 100%;
+}
+.portfolio-layout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.portfolio-background {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-color: #dc3e3e1d;
+  border-top-left-radius: 3em;
+  border-bottom-left-radius: 3em;
+  width: 70%;
+  height: 28em;
+  z-index: -2;
+}
+
+.portfolio-content {
+  margin-top: 2.5em;
+  margin-left: 25%;
+  font-size: 42px;
+}
+
+.portfolio-projects {
+  max-width: 70em;
+  //align-self: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  margin-top: 4.5em;
+}
+.portfolio-projects div {
+  height: 22em;
+  width: 22em;
+  border-radius: 2em;
+  overflow: hidden;
+}
+
+.portfolio-projects > div:hover {
+  .open {
+    position: absolute;
+    z-index: 100;
+    background-color: #4f4b8a7d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+  }
+}
+
+.portfolio-projects .open {
+  display: none;
+}
+
+.portfolio-projects .open img {
+  width: 1em;
+  height: 1em;
+}
+.portfolio-projects .open p {
+  color: #fff;
+}
+
+.portfolio-projects div img {
+  object-fit: cover;
+  height: 22em;
+}
+
+.portfolio_advert {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  position: relative;
+}
+.portfolio_advert img {
+  position: absolute;
+  z-index: -1;
+}
+.portfolio_advert button {
+  height: 4em;
+  width: 20ch;
+  border-radius: 1em;
+  background-color: #130f49;
+  color: #fff;
+}
+
+.portfolio_advert p {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.blog {
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 10em;
+  width: 70em;
+}
+.blog-layout {
+  display: flex;
+  gap: 2em;
+  flex-wrap: wrap;
+}
+.blog_div {
+  margin-top: 2em;
+  width: 20em;
+  height: 25em;
+  border-radius: 2em;
+  border:solid 1px #99b4da1f;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.blog_div:hover {
+  box-shadow:
+    5px 20px 100px #0304040a,
+    9px 10px 30px #96c5dc2f;
+}
+
+.blog_div img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+}
+
+.blog_div h2 {
+  padding-inline: 1em;
+  text-overflow: ellipsis;
+  max-height: 35%;
+  overflow:hidden;
+}
+
+.blog_div p {
+  height:10%;
+  padding-inline: 1.1em;
+}
+
+.blog_div h2 {
+  font-size: x-large;
+}
+
+.blog .view_more {
+  margin-top:0.3em;
+  position: absolute;
+  left: 70%;
+  bottom:-5%;
+}
+
 @media screen and (max-width: 992px) {
+  .portfolio-content {
+    margin-left: 0px;
+    align-self: center;
+  }
+
+  .portfolio-projects {
+    width: min-content;
+  }
+
+  .blog {
+    width: min-content;
+  }
   .info {
     margin-top: 2vh;
-    margin-left:0.8em;
+    margin-left: 0.8em;
     .image {
       display: none;
     }
   }
+
+  .service_content .services_title {
+    margin-left: 1em;
+  }
+
+  .service_content p {
+    margin-left: 1em;
+    text-overflow: ellipsis;
+    height: 20%;
+  }
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 2em;
+}
+.contact .contact_element {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #e9f9ff;
+  border-radius: 2em;
+  width: 93%;
+  max-width: 75em;
+  height: 28em;
+  margin-bottom: 2em;
+  gap: 0.5em;
+  text-align: center;
+}
+
+.contact h4 {
+  color: #130f49;
+}
+
+.contact h2 {
+  font-size: 3em;
+}
+
+.contact p {
+  font-size: smaller;
+}
+
+.social {
+  margin-top: 3em;
+  height: 2.5em;
+  gap: 1.5em;
+  display: flex;
+}
+
+.social img {
+  height: 2em;
+  width: 2em;
+}
+
+@keyframes fade-bottom {
+  0% {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-left {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-right {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.reveal {
+  opacity: 0;
+}
+
+.reveal.active {
+  opacity: 1;
+}
+.active.fade-bottom {
+  animation: fade-bottom 1s ease-in;
+}
+.active.fade-left {
+  animation: fade-left 1s ease-in;
+}
+.active.fade-right {
+  animation: fade-right 1s ease-in;
 }
