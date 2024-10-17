@@ -1,15 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" class="s">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Eyasu</title>
+    <link rel="stylesheet" href="css/main_style.css" />
   </head>
-  <link rel="stylesheet" href="css/styles.css" />
 
   <body>
     <header class="header">
       <h1 class="icon">👋</h1>
+      <button class="menu_toggle">☰</button>
       <nav class="nav">
         <a href="#services">Services</a>
         <a href="#portfolio">Portfolio</a>
@@ -21,7 +22,7 @@
     </header>
     <main class="content">
       <div class="info fullscreen">
-        <div class="info_mobile">
+        <div>
           <h2>
             I Craft Unique
             <span> Websites </span>
@@ -55,7 +56,8 @@
           />
         </div>
       </div>
-      <div class="service fullscreen reveal fade-bottom" id="services">
+
+      <div class="fullscreen service reveal fade-bottom" id="services">
         <h1>My Services</h1>
         <div class="service_content">
           <div>
@@ -120,56 +122,72 @@
       <div class="fullscreen portfolio" id="portfolio">
         <div class="portfolio-background reveal fade-right"></div>
         <h1 class="portfolio-content reveal fade-bottom">Recent Works</h1>
-        <div class="portfolio-projects reveal fade-bottom">
-          <div>
-            <div class="open">
-              <a href="https://libes.vercel.app" target="_blank">
-                <img src="assets/icons/open.svg" />
-                <!-- <p>open</p> -->
-              </a>
+        <div class="portfolio-layout">
+          <div class="portfolio-projects reveal fade-bottom">
+            <div>
+              <div class="open">
+                <a href="https://libes.vercel.app" target="_blank">
+                  <img src="assets/icons/open.svg" />
+                  <!-- <p>open</p> -->
+                </a>
+              </div>
+              <img src="assets/image/works/merch.png" alt="website " />
             </div>
-            <img src="assets/image/works/merch.png" alt="website " />
-          </div>
-          <div>
-            <div class="open">
-              <a href="https://anoblocks.vercel.app" target="_blank">
-                <img src="assets/icons/open.svg" />
-                <!-- <p>open</p> -->
-              </a>
+            <div>
+              <div class="open">
+                <a href="https://anoblocks.vercel.app" target="_blank">
+                  <img src="assets/icons/open.svg" />
+                  <!-- <p>open</p> -->
+                </a>
+              </div>
+              <img src="assets/image/works/ano.png" alt="website " />
             </div>
-            <img src="assets/image/works/ano.png" alt="website " />
-          </div>
-          <div>
-            <div class="open">
-              <a href="https://bitcoin-wallet-lovat.vercel.app" target="_blank">
-                <img src="assets/icons/open.svg" />
-                <!-- <p>open</p> -->
-              </a>
+            <div>
+              <div class="open">
+                <a
+                  href="https://bitcoin-wallet-lovat.vercel.app"
+                  target="_blank"
+                >
+                  <img src="assets/icons/open.svg" />
+                  <!-- <p>open</p> -->
+                </a>
+              </div>
+              <img src="assets/image/works/bitcoinwallet.png" alt="website " />
             </div>
-            <img src="assets/image/works/bitcoinwallet.png" alt="website " />
+            <div class="portfolio_advert">
+              <img src="assets/image/works/background.webp" />
+              <p>Your website here</p>
+              <button onclick="composeEmail()">Start a project</button>
+            </div>
           </div>
-          <div class="portfolio_advert">
-            <img src="assets/image/works/background.webp" />
-            <p>Your website here</p>
-            <button onclick="composeEmail()">Start a project</button>
-          </div>
-          <div></div>
         </div>
       </div>
-      <div class="blog fullscreen reveal fade-bottom" id="blog">
+      <div class="blog  reveal fade-bottom" id="blog">
         <p>LATEST</p>
         <h1>From the Blog</h1>
-        <a
-          href="https://medium.com/@eyasukibru13/fantasy-premier-league-api-authentication-guide-using-node-js-ca25e693594e"
-        >
-          <div class="blog_div">
-            <img src="assets/image/blog/blog_fantasy.png" />
-            <h2>
-              Fantasy Premier League API authentication guide(using node.js)
-            </h2>
-            <p>Dec 31, 2021</p>
-          </div>
-        </a>
+        <div class="blog-layout">
+          <a
+            href="
+      https://medium.com/@eyasukibru13/how-fast-has-blockchain-grown-over-time-0e307867805e"
+          >
+            <div class="blog_div">
+              <img src="assets/image/blog/blog_blockchain.webp" />
+
+              <h2>Is Blockchain Grown Over Time?</h2>
+              <p>Feb 8, 2024</p>
+            </div>
+          </a>
+
+          <a
+            href="https://medium.com/@eyasukibru13/fantasy-premier-league-api-authentication-guide-using-node-js-ca25e693594e"
+          >
+            <div class="blog_div">
+              <img src="assets/image/blog/blog_fantasy.png" />
+              <h2>FPL API authentication</h2>
+              <p>Dec 31, 2021</p>
+            </div>
+          </a>
+        </div>
         <a
           class="view_more"
           href="https://medium.com/@eyasukibru13"
@@ -186,17 +204,29 @@
             <a
               alt="linkedin"
               href="https://www.linkedin.com/in/eyasu-kibru-6151b61ab/"
+              target="_blank"
+              rel="noopener noreferrer"
               ><img src="assets/icons/linkedin.png"
             /></a>
             <a
               alt="upwork"
               href="https://www.upwork.com/freelancers/~0120aad2c2c79f5935"
+              target="_blank"
+              rel="noopener noreferrer"
               ><img src="assets/icons/upwork.png"
             /></a>
-            <a alt="github" href="https://github.com/Eyasuk"
+            <a
+              alt="github"
+              href="https://github.com/Eyasuk"
+              target="_blank"
+              rel="noopener noreferrer"
               ><img src="assets/icons/github.png"
             /></a>
-            <a alt="telegram" href="https://t.me/Ek9012"
+            <a
+              alt="telegram"
+              href="https://t.me/Ek9012"
+              target="_blank"
+              rel="noopener noreferrer"
               ><img src="assets/icons/telegram.png"
             /></a>
             <!-- <a alt="twitter"><img src="assets/icons/x.png" /></a> -->
@@ -205,7 +235,9 @@
         <p>© 2023 Eyasu Kibru. Inspired By Michael Mannucci</p>
       </div>
     </main>
+
     <script src="script/email.js"></script>
     <script src="script/animation.js"></script>
+    <script src="script/events.js"></script>
   </body>
 </html>
